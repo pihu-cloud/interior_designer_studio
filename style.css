@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*----- home section  ---*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0D1B2A;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.logo{
+    color: #E0E1DD;
+    text-transform: uppercase ;
+    font-weight: 900;
+    letter-spacing: 3px;
+    border: 2px solid #E0E1DD;
+    padding: 10px; 
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase ;
+    font-size: 14px;
+    position: relative;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background: #fff;
+    bottom: -5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav .social button{
+     padding: 10px;
+     background: transparent;
+     border: 2px solid #fff;
+     margin: 5px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+nav .social button:hover{
+    background-color: #fff;
+    color: #0D1B2A;
+    cursor: pointer;
+}
+
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('http://hawk-haven.com/wp-content/uploads/2017/02/beautiful-living-rooms-photo-25.jpg');
+    background-size: cover;
+    height: 91vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    padding: 30px;
+}
+
+/*---GALLERY SECTION---*/
+.gallery{
+    min-height: 100vh;
+    background: #0D1B2A;
+}
+
+.gallery h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+}
+
+.container .design-box{
+    height: 300px;
+    width: 320px;
+    margin: 30px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.19);
+}
+
+.design-box .image{
+    height: 250px;
+    width: 320px;
+}
+
+.design-box .image img{
+    height: 250px;
+    width: 320px;
+}
+
+.design-box .content{
+    height: 50px;
+    background-color: #415A77;
+    color: white;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
+.design-box .content h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*-------SERVICE SECTION---*/
+.services{
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://topdreamer.com/wp-content/uploads/2015/06/finest-design-modern-master-bedroom.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.services h1{
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+.services .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60vh ;
+}
+
+.container .service-box{
+    height: 300px;
+    width: 300px;
+    background: #0D1B2A;
+    border-radius: 50%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box img{
+    height: 100px;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+.service-box h5{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.service-box p{
+    color: #fff;
+    padding:10px 40px ;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*-------FOOTER SECTION---*/
+.footer{
+  height: 300px;
+  background: #0D1B2A;   
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.address p{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.links p{
+    font-size:18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.links ul li{
+    padding: 5px;
+    color: #fff;
+}
+
+.links ul li a{
+     color: #fff;
+     text-decoration: none;
+} 
+
+.foot-gallery p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.foot-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.foot-gallery img{
+    height:50px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.copyright{
+    padding: 10px;
+    text-align: center;
+    background-color: #0D1B2A;
+    border-top: 2px solid #fff;
+}
+
+.copyright p{
+    padding: 5px;
+    color: #fff;
+}
